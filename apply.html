@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application - JVSA</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1 style="text-align:center">Job Application Form</h1>
+        <h4 style="text-align:center">Please fill in the form to apply for a position!</h4>
+        <form id="applicationForm">
+            <div id="form-body">
+                <b><label for="firstName">First Name</label></b>
+                <input type="text" id="firstName" class="small-box" placeholder="First Name" required>
+                <b style="padding-left:30px"><label for="lastName">Last Name</label></b>
+                <input type="text" id="lastName" class="small-box" placeholder="Last Name" required><br><br>
+                <b><label for="email">Email Address</label></b><br>
+                <input type="email" id="email" class="large-box" placeholder="example@domain.com" required><br><br>
+                <b><label for="phone">Phone Number</label></b><br>
+                <input type="tel" id="phone" class="large-box" placeholder="1234567890" required><br><br>
+                <b><label for="position">Position Applied for</label></b><br>
+                <select id="position" class="large-box" required>
+                    <option value="">Select position</option>
+                    <option value="frontend">Frontend developer</option>
+                    <option value="backend">Backend developer</option>
+                    <option value="fullstack">Full Stack developer</option>
+                </select><br><br>
+                <b><label>Experience</label></b><br>
+                <label><input type="radio" name="experience" value="entry" required> Entry level</label><br>
+                <label><input type="radio" name="experience" value="mid"> Mid level</label><br>
+                <label><input type="radio" name="experience" value="senior"> Senior level</label><br><br>
+                <b><label for="resume">Resume / CV</label></b><br>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required><br><br>
+                <div class="button-container">
+                    <input type="reset" value="Reset" class="action-btn reset-btn">
+                    <input type="submit" value="Submit" class="action-btn submit-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="apply.js"></script>
+</body>
+</html>
